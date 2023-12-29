@@ -458,7 +458,7 @@ namespace MediaBrowser.Providers.Manager
             {
                 if (type == ImageType.Primary && item is Episode)
                 {
-                    path = Path.Combine(Path.GetDirectoryName(item.Path), filename + "-thumb" + extension);
+                    path = Path.Combine(Path.GetDirectoryName(item.Path), filename + extension);
                 }
                 else if (item.IsInMixedFolder)
                 {
